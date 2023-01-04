@@ -1,7 +1,12 @@
 ---
 - name: first file
-  hosts: 192.168.197.86
+  hosts: Demo
+  becomes: Yes  
+  connection: ssh
   gather_facts: flase
+  
 tasks:
 - name: directory create
-  touch: file 
+  file:
+  path: ~/backups
+  state: directory
