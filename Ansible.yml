@@ -4,9 +4,5 @@
   becomes: Yes  
   connection: ssh
   gather_facts: flase
+ 
   
-tasks:
-- name: directory create
-  file:
-  path: ~/backups
-  state: directory
