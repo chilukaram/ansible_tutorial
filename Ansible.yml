@@ -6,5 +6,5 @@
   gather_facts: flase
  
 - tasks:
-  path: /backups
-  state: diretory
+   path: /backups
+   state: diretory
