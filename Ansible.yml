@@ -7,7 +7,7 @@
  
  - hosts: demo  
 
-  tasks:
+#  tasks:
 
 #   - name: Ansible create directory and set permissions    
 #
