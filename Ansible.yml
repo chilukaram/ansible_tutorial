@@ -9,13 +9,18 @@
 
   tasks:
 
-   - name: Ansible create directory and set permissions    
+#   - name: Ansible create directory and set permissions    
+#
+ #    file:
+  #     path: /backups      
 
-     file:
-       path: /backups      
+   #     state: directory      
 
-        state: directory      
+    #    mode: "u=rw,g=wx,o=rwx"    
 
-        mode: "u=rw,g=wx,o=rwx"    
-
-   become: yes
+   #become: yes
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: /etc/some_directory
+    state: directory
+    mode: '0755'
