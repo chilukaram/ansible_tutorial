@@ -7,6 +7,6 @@
   tasks:
     - name: Create a directory if it does not exist
       ansible.builtin.file:
-        path: /etc/Mahesh/Test
+        path: /etc/Mahesh/Test/Ajay
         state: directory
         mode: "0755"
