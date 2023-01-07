@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.197.87
+- hosts: demo
   user: root
   become: yes
  # connection: ssh
