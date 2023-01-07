@@ -1,9 +1,12 @@
 ---
-- name: first file
-  hosts: Demo
-  becomes: Yes  
+- hosts: demo
+  user: root
+  become: yes
   connection: ssh
-  gather_facts: flase
- 
-
-
+  gather_facts: true
+  tasks:
+    - name: Create a directory if it does not exist
+      ansible.builtin.file:
+        path: /etc/Mahesh/Test
+        state: directory
+        mode: "0755"
