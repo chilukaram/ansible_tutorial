@@ -6,6 +6,7 @@
  #gather_facts: flase
  
  - hosts: demo  
+   gather_facts: flase
   tasks:
    - name: Ansible create directory and set permissions    
      file:
@@ -14,8 +15,4 @@
         mode: "u=rw,g=wx,o=rwx"    
 
    become: yes
-#- name: Create a directory if it does not exist
- # ansible.builtin.file:
-  #  path: /etc/some_directory
-   # state: directory
-    #mode: '0755'
+
