@@ -2,7 +2,7 @@
 - hosts: demo
   user: root
   become: yes
- # connection: ssh
+  connection: ssh
   gather_facts: false
   tasks:
     - name: Create a directory if it does not exist
