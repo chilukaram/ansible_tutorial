@@ -1,5 +1,5 @@
 ---
-- hosts: demo
+- hosts: all
   user: root
   become: yes
   connection: ssh
